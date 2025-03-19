@@ -81,23 +81,48 @@ Fin Funcion
 Algoritmo MyMath
 	x = 0
 	exit = Verdadero
-	opc = 0
+	opc = 's'
 	Mientras exit Hacer
-		Escribir "Elige una opción: "
+		Escribir "Escriba la operación a realizar en minusculas usando abreviaciones de nombres comunes ex. exp: "
 		Leer  opc
 		Segun opc Hacer
-			1:
+			'fact':
 				Escribir "Ingresa un número: "
 				Leer  x
 				Escribir "El resultado es: ", fact(x)
-			2:
+			'abs':
 				Escribir "Ingresa un número: "
 				Leer  x
 				Escribir "El resultado es: ", abss(x)
-			opcion_3:
-				secuencia_de_acciones_3
+			'perm':
+				n = 0
+				k = 0
+				Escribir "Ingresa n: "
+				Leer n
+				Escribir "Ingresa k: "
+				Leer k
+				Escribir "El resultado es: ", perm(n, k)
+			'comb':
+				n = 0
+				k = 0
+				Escribir "Ingresa n: "
+				Leer n
+				Escribir "Ingresa k: "
+				Leer k
+				Escribir "El resultado es: ", comb(n, k)
+			'deg':
+				Escribir "Ingresa un número: "
+				Leer  x
+				Escribir "El resultado es: ", degToRad(x)
+			'rad':
+				Escribir "Ingresa un número: "
+				Leer  x
+				Escribir "El resultado es: ", radToDeg(x)
+			'exit':
+				Escribir "Saliendo..."
+				exit = Falso
 			De Otro Modo:
-				secuencia_de_acciones_dom
+				Escribir "La opción ", opc, " no existe"
 		Fin Segun
 	Fin Mientras
 FinAlgoritmo

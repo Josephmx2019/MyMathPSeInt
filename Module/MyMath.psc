@@ -76,22 +76,20 @@ Funcion aux <- PII ( Argumentossecuencia_de_acciones )
 	aux = 4 + aux
 Fin Funcion
 
-
-
 Algoritmo MyMath
 	x = 0
 	exit = Verdadero
 	opc = 's'
 	Mientras exit Hacer
-		Escribir "Escriba la operación a realizar en minusculas usando abreviaciones de nombres comunes ex. exp: "
+		Escribir "Escriba la operaciÃ³n a realizar en minusculas usando abreviaciones de nombres comunes ex. exp: "
 		Leer  opc
 		Segun opc Hacer
 			'fact':
-				Escribir "Ingresa un número: "
+				Escribir "Ingresa un nÃºmero: "
 				Leer  x
 				Escribir "El resultado es: ", fact(x)
 			'abs':
-				Escribir "Ingresa un número: "
+				Escribir "Ingresa un nÃºmero: "
 				Leer  x
 				Escribir "El resultado es: ", abss(x)
 			'perm':
@@ -111,18 +109,18 @@ Algoritmo MyMath
 				Leer k
 				Escribir "El resultado es: ", comb(n, k)
 			'deg':
-				Escribir "Ingresa un número: "
+				Escribir "Ingresa un nÃºmero: "
 				Leer  x
 				Escribir "El resultado es: ", degToRad(x)
 			'rad':
-				Escribir "Ingresa un número: "
+				Escribir "Ingresa un nÃºmero: "
 				Leer  x
 				Escribir "El resultado es: ", radToDeg(x)
 			'exit':
 				Escribir "Saliendo..."
 				exit = Falso
 			De Otro Modo:
-				Escribir "La opción ", opc, " no existe"
+				Escribir "La opciÃ³n ", opc, " no existe"
 		Fin Segun
 	Fin Mientras
 FinAlgoritmo
